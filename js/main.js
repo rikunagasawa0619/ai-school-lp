@@ -69,20 +69,34 @@ $(function () {
     // ハンバーガーメニューでの開閉制御関数
     //-------------------------------------------------
     function initHamburger($hamburger, $menu) {
-        $hamburger.on('click', function () {
-            $(this).toggleClass('ham');
-            if ($(this).hasClass('ham')) {
+        function toggleMenu() {
+            $hamburger.toggleClass('ham');
+            if ($hamburger.hasClass('ham')) {
                 $menu.show();
+                $hamburger.attr('aria-expanded', 'true');
+                $hamburger.attr('aria-label', 'メニューを閉じる');
                 if ($(window).width() < breakPoint) {
                     $('body').addClass('noscroll');
                 }
             } else {
                 $menu.hide();
+                $hamburger.attr('aria-expanded', 'false');
+                $hamburger.attr('aria-label', 'メニューを開く');
                 if ($(window).width() < breakPoint) {
                     $('body').removeClass('noscroll');
                 }
             }
             $menu.find('.ddmenu_parent ul').hide();
+        }
+
+        $hamburger.on('click', toggleMenu);
+
+        // キーボードアクセシビリティ（Enter/Space）
+        $hamburger.on('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMenu();
+            }
         });
     }
 
@@ -193,10 +207,27 @@ window.addEventListener('resize', setDynamicHeight);
 //===============================================================
 $(function () {
     $('.faq dt').next().hide();
+
+    function toggleFaqItem($dt) {
+        var isActive = $dt.hasClass('active');
+        // 他の項目を閉じる
+        $('.faq dt').not($dt).removeClass('active').attr('aria-expanded', 'false').next().slideUp();
+        // クリックした項目をトグル
+        $dt.toggleClass('active');
+        $dt.attr('aria-expanded', isActive ? 'false' : 'true');
+        $dt.next().slideToggle();
+    }
+
     $('.faq dt').click(function () {
-        $(this).toggleClass('active');
-        $(this).next().slideToggle();
-        $('.faq dt').not(this).removeClass('active').next().slideUp();
+        toggleFaqItem($(this));
+    });
+
+    // キーボードアクセシビリティ（Enter/Space）
+    $('.faq dt').on('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleFaqItem($(this));
+        }
     });
 });
 

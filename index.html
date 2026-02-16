@@ -1,466 +1,572 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>スポーツ × デジタル AI実戦スクール｜スポデジスクール</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="スポーツ × デジタル。新しい大人の習い事「AI実戦スクール」。生成AI入門からAIエージェント構築まで、初心者大歓迎のオフライン講義。Doron GALLERY TOKYOにて開催。">
-<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>スポーツ × デジタル AI実戦スクール｜スポデジスクール</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="スポーツ × デジタル。新しい大人の習い事「AI実戦スクール」。生成AI入門からAIエージェント構築まで、初心者大歓迎のオフライン講義。Doron GALLERY TOKYOにて開催。">
+
+	<!-- OGP (Open Graph Protocol) -->
+	<meta property="og:title" content="AI実戦スクール｜スポデジスクール">
+	<meta property="og:description" content="スポーツ × デジタル。新しい大人の習い事。生成AI入門からAIエージェント構築まで、初心者大歓迎。">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://spodigischool.vercel.app/">
+	<meta property="og:image" content="https://spodigischool.vercel.app/images/ogp.png">
+	<meta property="og:site_name" content="スポデジスクール">
+	<meta property="og:locale" content="ja_JP">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@D_digital_sup">
+	<meta name="twitter:title" content="AI実戦スクール｜スポデジスクール">
+	<meta name="twitter:description" content="スポーツ × デジタル。新しい大人の習い事。生成AI入門からAIエージェント構築まで、初心者大歓迎。">
+	<meta name="twitter:image" content="https://spodigischool.vercel.app/images/ogp.png">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://spodigischool.vercel.app/">
+
+	<!-- Favicon -->
+	<link rel="icon" href="images/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+
+	<!-- Google Fonts (preconnect for performance) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- JSON-LD 構造化データ -->
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "スポデジスクール（AI実戦スクール）",
+  "alternateName": "DD DIGITAL SERVICES",
+  "description": "スポーツ × デジタル。新しい大人の習い事「AI実戦スクール」。生成AI入門からAIエージェント構築まで、初心者大歓迎のオフライン講義。",
+  "url": "https://spodigischool.vercel.app/",
+  "logo": "https://spodigischool.vercel.app/images/logo.png",
+  "email": "riku@center3.co.jp",
+  "telephone": "+81-70-8932-5852",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "業平3-16-1 鳥崎ビル 2F",
+    "addressLocality": "墨田区",
+    "addressRegion": "東京都",
+    "postalCode": "131-0045",
+    "addressCountry": "JP"
+  },
+  "sameAs": [
+    "https://x.com/D_digital_sup",
+    "https://www.youtube.com/@Doron%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%A6%E3%82%A7%E3%82%A2%E5%85%AC%E5%BC%8F"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "株式会社センタースリー"
+  }
+}
+</script>
 </head>
 
 <body class="home small-screen">
 
-<div id="container">
+	<div id="container">
 
 
 
-<!--▼▼▼▼▼ここから「ヘッダー」-->
-<header>
+		<!--▼▼▼▼▼ここから「ヘッダー」-->
+		<header>
 
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="DD DIGITAL SERVICES"></a></h1>
+			<div id="logo"><a href="index.html"><img src="images/logo.png" alt="DD DIGITAL SERVICES"></a></div>
+			<h1 class="sr-only">AI実戦スクール｜スポーツ × デジタル 新しい大人の習い事</h1>
 
-<!--開閉メニュー-->
-<div id="menubar" style="display:none;">
+			<!--開閉メニュー-->
+			<div id="menubar" style="display:none;" role="navigation" aria-label="メインメニュー">
 
-<nav>
-<ul>
-<li><a href="#kodawari">スクールの魅力</a></li>
-<li><a href="#service">講義内容</a></li>
-<li><a href="#flow">受講の流れ</a></li>
-<li><a href="#voice">受講者の声</a></li>
-<li><a href="#faq">よくある質問</a></li>
-<li><a href="#footer">アクセス</a></li>
-</ul>
-</nav>
+				<nav>
+					<ul>
+						<li><a href="#kodawari">スクールの魅力</a></li>
+						<li><a href="#service">講義内容</a></li>
+						<li><a href="#flow">受講の流れ</a></li>
+						<li><a href="#voice">受講者の声</a></li>
+						<li><a href="#faq">よくある質問</a></li>
+						<li><a href="#footer">アクセス</a></li>
+					</ul>
+				</nav>
 
-</div>
-<!--/#menubar（開閉メニュー）-->
+			</div>
+			<!--/#menubar（開閉メニュー）-->
 
-<div id="header-box">
-<ul class="btn">
-<li><a href="mailto:riku@center3.co.jp"><i class="fa-solid fa-envelope"></i>メールで問い合わせ</a></li>
-<li><a href="tel:07089325852"><i class="fa-solid fa-phone-volume"></i>電話で問い合わせ</a></li>
-</ul>
-</div>
+			<div id="header-box">
+				<ul class="btn">
+					<li><a href="#contact-form"><i class="fa-solid fa-envelope" aria-hidden="true"></i>メールで問い合わせ</a>
+					</li>
+					<li><a href="tel:07089325852"><i class="fa-solid fa-phone-volume"
+								aria-hidden="true"></i>電話で問い合わせ</a></li>
+				</ul>
+			</div>
 
-</header>
-<!--▲▲▲▲▲ここまで「ヘッダー」-->
+		</header>
+		<!--▲▲▲▲▲ここまで「ヘッダー」-->
 
 
 
-<!--▼▼▼▼▼ここから「ヒーローイメージ」-->
-<aside id="mainimg">
-<div class="hero-bg">
-<div class="hero-content">
-<p class="hero-subtitle">スポーツ × デジタル</p>
-<h2 class="hero-title">
-	<span class="highlight">新</span> 大人の習い事<br>
-	<span class="box-text">Ａ</span><span class="box-text">Ｉ</span><span class="box-text">実</span><span class="box-text">戦</span><br>
-	<span class="hero-badge">新企画</span> スクール
-</h2>
-<p class="hero-welcome">初心者大歓迎</p>
-</div>
-</div>
-</aside>
-<!--▲▲▲▲▲ここまで「ヒーローイメージ」-->
+		<!--▼▼▼▼▼ここから「ヒーローイメージ」-->
+		<aside id="mainimg">
+			<div class="hero-bg">
+				<div class="hero-content">
+					<p class="hero-subtitle">スポーツ × デジタル</p>
+					<h2 class="hero-title">
+						<span class="highlight">新</span> 大人の習い事<br>
+						<span class="box-text">Ａ</span><span class="box-text">Ｉ</span><span
+							class="box-text">実</span><span class="box-text">戦</span><br>
+						<span class="hero-badge">新企画</span> スクール
+					</h2>
+					<p class="hero-welcome">初心者大歓迎</p>
+				</div>
+			</div>
+		</aside>
+		<!--▲▲▲▲▲ここまで「ヒーローイメージ」-->
 
 
 
-<!--▼▼▼▼▼ここから「１行お知らせ」-->
-<div class="new-top">
-<h2>お知らせ</h2>
-<p class="text">スポデジスクール公式サイトがオープンしました。最新情報はこちらをご確認ください。</p>
-<p class="new-list"><a href="#">一覧</a></p>
-</div>
-<!--▲▲▲▲▲ここまで「１行お知らせ」-->
+		<!--▼▼▼▼▼ここから「１行お知らせ」-->
+		<div class="new-top">
+			<h2>お知らせ</h2>
+			<p class="text">スポデジスクール公式サイトがオープンしました。最新情報はこちらをご確認ください。</p>
+			<p class="new-list"><a href="https://x.com/D_digital_sup" target="_blank" rel="noopener noreferrer">最新情報</a>
+			</p>
+		</div>
+		<!--▲▲▲▲▲ここまで「１行お知らせ」-->
 
 
 
-<div id="contents">
+		<div id="contents">
 
-<main>
+			<main>
 
 
 
-<!--▼▼▼▼▼ここから「スクールの魅力」-->
-<section id="kodawari">
+				<!--▼▼▼▼▼ここから「スクールの魅力」-->
+				<section id="kodawari">
 
-<h2 class="c"><span class="fade-in-text">〜スポデジスクールの魅力〜</span><span class="small">Our Values</span></h2>
+					<h2 class="c"><span class="fade-in-text">〜スポデジスクールの魅力〜</span><span class="small">Our Values</span>
+					</h2>
 
-<div class="list-half">
+					<div class="list-half">
 
-<div class="list up">
+						<div class="list up">
 
-<div class="text">
-<h4>実際の案件に挑戦できる<span>Real-World Projects</span></h4>
-<p>ポスター制作等、実際の案件に挑戦できる環境をご用意。座学だけでなく、実践的なスキルを身につけることができます。学んだ知識をすぐにアウトプットできるカリキュラムが特徴です。</p>
-</div>
+							<div class="text">
+								<h4>実際の案件に挑戦できる<span>Real-World Projects</span></h4>
+								<p>ポスター制作等、実際の案件に挑戦できる環境をご用意。座学だけでなく、実践的なスキルを身につけることができます。学んだ知識をすぐにアウトプットできるカリキュラムが特徴です。
+								</p>
+							</div>
 
-<div class="image-r">
-<figure><img src="images/hero.jpg" alt="実践的な学習環境"></figure>
-</div>
+							<div class="image-r">
+								<figure><img src="images/hero.jpg" alt="実践的な学習環境" loading="lazy"></figure>
+							</div>
 
-</div>
-<!--/.list-->
+						</div>
+						<!--/.list-->
 
-<div class="list up">
+						<div class="list up">
+
+							<div class="text">
+								<h4>スポーツに特化した内容<span>Sports-Focused Content</span></h4>
+								<p>スポーツに特化した内容も学ぶことができる独自のカリキュラム。スポーツビジネスにAIを活用するための知識とスキルを習得できます。</p>
+							</div>
+
+							<div class="image-l">
+								<figure><img src="images/instructor.jpg" alt="講師による指導" loading="lazy"></figure>
+							</div>
 
-<div class="text">
-<h4>スポーツに特化した内容<span>Sports-Focused Content</span></h4>
-<p>スポーツに特化した内容も学ぶことができる独自のカリキュラム。スポーツビジネスにAIを活用するための知識とスキルを習得できます。</p>
-</div>
+						</div>
+						<!--/.list-->
 
-<div class="image-l">
-<figure><img src="images/instructor.jpg" alt="講師による指導"></figure>
-</div>
+						<div class="list up">
 
-</div>
-<!--/.list-->
+							<div class="text">
+								<h4>多数のAIツールを利用可能<span>Exclusive AI Tools</span></h4>
+								<p>講師が制作した多数のAIツールを利用できます。最新の生成AIツールからビジネス向けアプリケーションまで、実際に手を動かしながら学べる環境です。</p>
+								<p>講義は<strong>「オフライン」</strong>で実施します。時代のトレンドスキルを仲間と一緒に学びませんか？</p>
+							</div>
+
+							<div class="image-r">
+								<figure><img src="images/ai-tools.png" alt="AIツール活用" loading="lazy"></figure>
+							</div>
+
+						</div>
+						<!--/.list-->
+
+					</div>
+					<!--/.list-half-->
+
+				</section>
+				<!--▲▲▲▲▲ここまで「スクールの魅力」-->
+
+
+
+				<!--▼▼▼▼▼ここから「講義内容・開催情報」-->
+				<section id="service" class="bg1">
+
+					<h2 class="c"><span class="fade-in-text">講義内容・開催情報</span><span class="small">Course Details</span>
+					</h2>
+
+					<div class="list-grid7">
+
+						<div class="list up">
+							<figure><i class="fa-solid fa-robot" aria-hidden="true"
+									style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i>
+							</figure>
+							<h4>生成AI入門<span>AI Introduction</span></h4>
+							<p>生成AI入門 / 活用 / 応用 / ツール導入。基礎から応用まで段階的に学習できるカリキュラムをご用意しています。</p>
+						</div>
+
+						<div class="list up">
+							<figure><i class="fa-solid fa-code" aria-hidden="true"
+									style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i>
+							</figure>
+							<h4>AIエージェント構築<span>AI Agent Development</span></h4>
+							<p>AIエージェント構築 / ツール開発。実践的なAIツールの構築方法を学び、自分だけのAIエージェントを作成できます。</p>
+						</div>
+
+						<div class="list up">
+							<figure><i class="fa-solid fa-palette" aria-hidden="true"
+									style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i>
+							</figure>
+							<h4>デザイン・ビジネス<span>Design & Business</span></h4>
+							<p>AIコンプライアンス研修 / デザイン / 動画編集 / ビジネス概論 他。幅広い分野をカバーするカリキュラムです。</p>
+						</div>
+
+					</div>
+					<!--/.list-grid7-->
+
+					<!-- 開催情報カード -->
+					<div class="info-grid">
+
+						<div class="info-card up">
+							<h4><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 開催場所</h4>
+							<p><strong>Doron GALLERY TOKYO</strong><br>
+								東京都墨田区業平3-16-1鳥崎ビル 2F<br>
+								または、近隣会場</p>
+						</div>
+
+						<div class="info-card up">
+							<h4><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 開催日時</h4>
+							<p>ホームページをご覧ください。<br>
+								最新のスケジュール情報は随時更新いたします。</p>
+						</div>
+
+						<div class="info-card up">
+							<h4><i class="fa-solid fa-users" aria-hidden="true"></i> 定員</h4>
+							<p>各回 <span class="capacity-num">6</span> 名<br>
+								複数回開催予定（定員決まり次第終了）</p>
+						</div>
+
+						<div class="info-card up">
+							<h4><i class="fa-solid fa-yen-sign" aria-hidden="true"></i> 受講料</h4>
+							<p>詳細はお問い合わせください。<br>
+								お気軽にご相談ください。</p>
+						</div>
+
+					</div>
+					<!--/.info-grid-->
+
+				</section>
+				<!--▲▲▲▲▲ここまで「講義内容・開催情報」-->
+
+
+
+				<!--▼▼▼▼▼ここから「受講の流れ」-->
+				<section id="flow">
+
+					<h2 class="c"><span class="fade-in-text">受講の流れ</span><span class="small">Flow</span></h2>
+
+					<div class="flow-box up">
+						<span class="step-num">Step01</span>
+						<div class="title">
+							<h3>お問い合わせ<span>Contact Us</span></h3>
+						</div>
+						<div class="text">
+							<h3>まずはお気軽にお問い合わせください</h3>
+							<p>メールまたはお電話にて、お問い合わせください。スクールの詳細やご不明点についてお答えいたします。</p>
+							<ul class="step">
+								<li>下記お問い合わせフォーム、またはお電話（070-8932-5852）でご連絡ください。</li>
+								<li>スクールの内容、日程等についてご説明いたします。</li>
+							</ul>
+						</div>
+					</div>
 
-<div class="list up">
+					<div class="flow-box up">
+						<span class="step-num">Step02</span>
+						<div class="title">
+							<h3>受講申し込み<span>Application</span></h3>
+						</div>
+						<div class="text">
+							<h3>受講のお申し込み</h3>
+							<p>ご希望の日程を選択し、受講申し込みを行っていただきます。</p>
+							<ul class="step">
+								<li>ご希望の受講日程をお選びください。</li>
+								<li>必要事項をご記入の上、お申し込みください。</li>
+								<li>お申し込み確認後、詳細をご連絡いたします。</li>
+							</ul>
+						</div>
+					</div>
 
-<div class="text">
-<h4>多数のAIツールを利用可能<span>Exclusive AI Tools</span></h4>
-<p>講師が制作した多数のAIツールを利用できます。最新の生成AIツールからビジネス向けアプリケーションまで、実際に手を動かしながら学べる環境です。</p>
-<p>講義は<strong>「オフライン」</strong>で実施します。時代のトレンドスキルを仲間と一緒に学びませんか？</p>
-</div>
+					<div class="flow-box up">
+						<span class="step-num">Step03</span>
+						<div class="title">
+							<h3>受講開始<span>Start Learning</span></h3>
+						</div>
+						<div class="text">
+							<h3>いよいよ受講スタート！</h3>
+							<p>Doron GALLERY TOKYOまたは近隣会場にて、オフライン講義を受講いただきます。仲間と一緒に、最新のAIスキルを楽しく学びましょう！</p>
+							<ul class="step">
+								<li>受講当日は、ノートPCをお持ちください。</li>
+								<li>講師が制作したAIツールを使って実践的に学びます。</li>
+								<li>講義後も質問・相談をお受けいたします。</li>
+							</ul>
+						</div>
+					</div>
 
-<div class="image-r">
-<figure><img src="images/hero.jpg" alt="AIツール活用"></figure>
-</div>
-
-</div>
-<!--/.list-->
-
-</div>
-<!--/.list-half-->
-
-</section>
-<!--▲▲▲▲▲ここまで「スクールの魅力」-->
-
-
-
-<!--▼▼▼▼▼ここから「講義内容・開催情報」-->
-<section id="service" class="bg1">
-
-<h2 class="c"><span class="fade-in-text">講義内容・開催情報</span><span class="small">Course Details</span></h2>
-
-<div class="list-grid7">
-
-<div class="list up">
-<figure><i class="fa-solid fa-robot" style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i></figure>
-<h4>生成AI入門<span>AI Introduction</span></h4>
-<p>生成AI入門 / 活用 / 応用 / ツール導入。基礎から応用まで段階的に学習できるカリキュラムをご用意しています。</p>
-</div>
-
-<div class="list up">
-<figure><i class="fa-solid fa-code" style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i></figure>
-<h4>AIエージェント構築<span>AI Agent Development</span></h4>
-<p>AIエージェント構築 / ツール開発。実践的なAIツールの構築方法を学び、自分だけのAIエージェントを作成できます。</p>
-</div>
-
-<div class="list up">
-<figure><i class="fa-solid fa-palette" style="font-size:3rem;color:var(--primary-color);display:block;text-align:center;margin-bottom:1rem;"></i></figure>
-<h4>デザイン・ビジネス<span>Design & Business</span></h4>
-<p>AIコンプライアンス研修 / デザイン / 動画編集 / ビジネス概論 他。幅広い分野をカバーするカリキュラムです。</p>
-</div>
-
-</div>
-<!--/.list-grid7-->
-
-<!-- 開催情報カード -->
-<div class="info-grid">
-
-<div class="info-card up">
-<h4><i class="fa-solid fa-location-dot"></i> 開催場所</h4>
-<p><strong>Doron GALLERY TOKYO</strong><br>
-東京都墨田区業平3-16-1鳥崎ビル 2F<br>
-または、近隣会場</p>
-</div>
-
-<div class="info-card up">
-<h4><i class="fa-solid fa-calendar-days"></i> 開催日時</h4>
-<p>ホームページをご覧ください。<br>
-最新のスケジュール情報は随時更新いたします。</p>
-</div>
-
-<div class="info-card up">
-<h4><i class="fa-solid fa-users"></i> 定員</h4>
-<p>各回 <span class="capacity-num">6</span> 名<br>
-複数回開催予定（定員決まり次第終了）</p>
-</div>
-
-<div class="info-card up">
-<h4><i class="fa-solid fa-yen-sign"></i> 受講料</h4>
-<p>詳細はお問い合わせください。<br>
-お気軽にご相談ください。</p>
-</div>
-
-</div>
-<!--/.info-grid-->
+				</section>
+				<!--▲▲▲▲▲ここまで「受講の流れ」-->
 
-</section>
-<!--▲▲▲▲▲ここまで「講義内容・開催情報」-->
 
 
+				<!--▼▼▼▼▼ここから「受講者の声」-->
+				<div id="voice" class="bg-slideup slideup1">
 
-<!--▼▼▼▼▼ここから「受講の流れ」-->
-<section id="flow">
+					<section>
 
-<h2 class="c"><span class="fade-in-text">受講の流れ</span><span class="small">Flow</span></h2>
+						<h2 class="c"><span class="fade-in-text">受講者の声</span><span class="small">Testimonials</span>
+						</h2>
 
-<div class="flow-box up">
-<span class="step-num">Step01</span>
-<div class="title">
-<h3>お問い合わせ<span>Contact Us</span></h3>
-</div>
-<div class="text">
-<h3>まずはお気軽にお問い合わせください</h3>
-<p>メールまたはお電話にて、お問い合わせください。スクールの詳細やご不明点についてお答えいたします。</p>
-<ul class="step">
-<li>メール（riku@center3.co.jp）またはお電話（070-8932-5852）でご連絡ください。</li>
-<li>スクールの内容、日程等についてご説明いたします。</li>
-</ul>
-</div>
-</div>
+						<div class="list-yoko-scroll">
 
-<div class="flow-box up">
-<span class="step-num">Step02</span>
-<div class="title">
-<h3>受講申し込み<span>Application</span></h3>
-</div>
-<div class="text">
-<h3>受講のお申し込み</h3>
-<p>ご希望の日程を選択し、受講申し込みを行っていただきます。</p>
-<ul class="step">
-<li>ご希望の受講日程をお選びください。</li>
-<li>必要事項をご記入の上、お申し込みください。</li>
-<li>お申し込み確認後、詳細をご連絡いたします。</li>
-</ul>
-</div>
-</div>
+							<div class="list">
+								<h4>Coming Soon</h4>
+								<p class="text">受講者の声は近日公開予定です。スクール開講後、受講者の皆様からいただいたご感想を掲載いたします。</p>
+							</div>
 
-<div class="flow-box up">
-<span class="step-num">Step03</span>
-<div class="title">
-<h3>受講開始<span>Start Learning</span></h3>
-</div>
-<div class="text">
-<h3>いよいよ受講スタート！</h3>
-<p>Doron GALLERY TOKYOまたは近隣会場にて、オフライン講義を受講いただきます。仲間と一緒に、最新のAIスキルを楽しく学びましょう！</p>
-<ul class="step">
-<li>受講当日は、ノートPCをお持ちください。</li>
-<li>講師が制作したAIツールを使って実践的に学びます。</li>
-<li>講義後も質問・相談をお受けいたします。</li>
-</ul>
-</div>
-</div>
+							<div class="list">
+								<h4>Coming Soon</h4>
+								<p class="text">あなたの声をお待ちしております。受講後のフィードバックをぜひお寄せください。</p>
+							</div>
 
-</section>
-<!--▲▲▲▲▲ここまで「受講の流れ」-->
+							<div class="list">
+								<h4>Coming Soon</h4>
+								<p class="text">実際の受講体験に基づいた生の声をお届けする予定です。お楽しみに。</p>
+							</div>
 
+						</div>
+						<!--/.list-yoko-scroll-->
 
+					</section>
 
-<!--▼▼▼▼▼ここから「受講者の声」-->
-<div id="voice" class="bg-slideup slideup1">
+				</div>
+				<!--▲▲▲▲▲ここまで「受講者の声」-->
 
-<section>
 
-<h2 class="c"><span class="fade-in-text">受講者の声</span><span class="small">Testimonials</span></h2>
 
-<div class="list-yoko-scroll">
+				<!--▼▼▼▼▼ここから「よくある質問」-->
+				<section id="faq" class="bg1">
 
-<div class="list">
-<h4>Coming Soon</h4>
-<p class="text">受講者の声は近日公開予定です。スクール開講後、受講者の皆様からいただいたご感想を掲載いたします。</p>
-</div>
+					<h2><span class="fade-in-text">よくある質問</span><span class="small">FAQ</span></h2>
 
-<div class="list">
-<h4>Coming Soon</h4>
-<p class="text">あなたの声をお待ちしております。受講後のフィードバックをぜひお寄せください。</p>
-</div>
+					<dl class="faq">
 
-<div class="list">
-<h4>Coming Soon</h4>
-<p class="text">実際の受講体験に基づいた生の声をお届けする予定です。お楽しみに。</p>
-</div>
+						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">
+							AIやプログラミングの経験がなくても参加できますか？</dt>
+						<dd>はい、初心者大歓迎です！基礎からしっかりと学べるカリキュラムをご用意しておりますので、未経験の方でも安心してご参加いただけます。</dd>
 
-</div>
-<!--/.list-yoko-scroll-->
+						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">講義はどのような形式で行われますか？</dt>
+						<dd>講義は「オフライン」で実施します。Doron GALLERY TOKYO（東京都墨田区業平3-16-1鳥崎ビル
+							2F）または近隣会場にて、少人数制（各回6名）で行います。実際に手を動かしながら学ぶ実践型の講義です。</dd>
 
-</section>
+						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">受講に必要なものは何ですか？</dt>
+						<dd>ノートPCをご持参ください。講義で使用するAIツール等は、講師が用意したものをご利用いただけます。事前のソフトウェアインストール等が必要な場合は、事前にご案内いたします。</dd>
 
-</div>
-<!--▲▲▲▲▲ここまで「受講者の声」-->
+						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">スポーツに関わっていなくても受講できますか？
+						</dt>
+						<dd>もちろん受講いただけます。スポーツに特化した内容もご用意していますが、生成AIの入門から応用、AIエージェント構築、デザイン、動画編集など、幅広い内容を学ぶことができます。</dd>
 
+					</dl>
 
+				</section>
+				<!--▲▲▲▲▲ここまで「よくある質問」-->
 
-<!--▼▼▼▼▼ここから「よくある質問」-->
-<section id="faq" class="bg1">
 
-<h2><span class="fade-in-text">よくある質問</span><span class="small">FAQ</span></h2>
 
-<dl class="faq">
+				<!--▼▼▼▼▼ここから「お問い合わせフォーム」-->
+				<div id="contact-form" class="bg-slideup slideup2">
 
-<dt class="openclose2">AIやプログラミングの経験がなくても参加できますか？</dt>
-<dd>はい、初心者大歓迎です！基礎からしっかりと学べるカリキュラムをご用意しておりますので、未経験の方でも安心してご参加いただけます。</dd>
+					<section class="btn-box">
 
-<dt class="openclose2">講義はどのような形式で行われますか？</dt>
-<dd>講義は「オフライン」で実施します。Doron GALLERY TOKYO（東京都墨田区業平3-16-1鳥崎ビル 2F）または近隣会場にて、少人数制（各回6名）で行います。実際に手を動かしながら学ぶ実践型の講義です。</dd>
+						<h2 class="c" style="color:#fff;"><span class="fade-in-text">お問い合わせ</span><span class="small"
+								style="color:rgba(255,255,255,0.7);">Contact</span></h2>
 
-<dt class="openclose2">受講に必要なものは何ですか？</dt>
-<dd>ノートPCをご持参ください。講義で使用するAIツール等は、講師が用意したものをご利用いただけます。事前のソフトウェアインストール等が必要な場合は、事前にご案内いたします。</dd>
+						<p style="text-align:center;color:#fff;margin-bottom:2rem;">
+							お気軽にお問い合わせください。<br>下記フォームまたはお電話にてお待ちしております。</p>
 
-<dt class="openclose2">スポーツに関わっていなくても受講できますか？</dt>
-<dd>もちろん受講いただけます。スポーツに特化した内容もご用意していますが、生成AIの入門から応用、AIエージェント構築、デザイン、動画編集など、幅広い内容を学ぶことができます。</dd>
+						<ul class="btn">
+							<li><a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank"
+									rel="noopener noreferrer"><i class="fa-solid fa-paper-plane"
+										aria-hidden="true"></i>お問い合わせフォーム</a></li>
+							<li><a href="tel:07089325852"><i class="fa-solid fa-phone-volume"
+										aria-hidden="true"></i>お電話でお問い合わせ</a></li>
+						</ul>
 
-</dl>
+					</section>
 
-</section>
-<!--▲▲▲▲▲ここまで「よくある質問」-->
+				</div>
+				<!--▲▲▲▲▲ここまで「お問い合わせフォーム」-->
 
 
 
-<!--▼▼▼▼▼ここから「お問い合わせボタン」-->
-<div class="bg-slideup slideup2">
+				<!--▼▼▼▼▼ここから「講師プロフィール」-->
+				<section class="instructor-section">
 
-<section class="btn-box">
+					<h2 class="c"><span class="fade-in-text">講師紹介</span><span class="small">Instructor</span></h2>
 
-<ul class="btn">
-<li><a href="mailto:riku@center3.co.jp"><i class="fa-solid fa-envelope"></i>メールでお問い合わせ</a></li>
-<li><a href="tel:07089325852"><i class="fa-solid fa-phone-volume"></i>お電話でお問い合わせ</a></li>
-</ul>
+					<div class="instructor-profile up">
+						<img src="images/instructor.jpg" alt="講師：rio" class="instructor-photo" loading="lazy">
+						<div class="instructor-info">
+							<h3>講師：rio</h3>
+							<span class="title-role">デジタルイノベーションマネージャー</span>
+							<p class="bio">学生時代から8年間株式会社センタースリーのデジタル業務に携わっており、今回生成AIやデジタルツールについて教鞭を執る。</p>
 
-</section>
+							<div class="instructor-detail">
+								<h4>【主な活動内容】</h4>
+								<ul>
+									<li>AIコンサルタント業務　150名以上（法人含む）</li>
+									<li>配信活動/配信,SNSサポート業務　7年〜</li>
+								</ul>
 
-</div>
-<!--▲▲▲▲▲ここまで「お問い合わせボタン」-->
+								<h4>【携わったスポーツ】</h4>
+								<ul>
+									<li>ハンドボール、卓球、水泳</li>
+								</ul>
+							</div>
 
+						</div>
+					</div>
 
+				</section>
+				<!--▲▲▲▲▲ここまで「講師プロフィール」-->
 
-<!--▼▼▼▼▼ここから「講師プロフィール」-->
-<section class="instructor-section">
 
-<h2 class="c"><span class="fade-in-text">講師紹介</span><span class="small">Instructor</span></h2>
 
-<div class="instructor-profile up">
-<img src="images/instructor.jpg" alt="講師：rio" class="instructor-photo">
-<div class="instructor-info">
-<h3>講師：rio</h3>
-<span class="title-role">デジタルイノベーションマネージャー</span>
-<p class="bio">学生時代から8年間株式会社センタースリーのデジタル業務に携わっており、今回生成AIやデジタルツールについて教鞭を執る。</p>
+			</main>
 
-<div class="instructor-detail">
-<h4>【主な活動内容】</h4>
-<ul>
-<li>AIコンサルタント業務　150名以上（法人含む）</li>
-<li>配信活動/配信,SNSサポート業務　7年〜</li>
-</ul>
+		</div>
+		<!--/#contents-->
 
-<h4>【携わったスポーツ】</h4>
-<ul>
-<li>ハンドボール、卓球、水泳</li>
-</ul>
-</div>
 
-</div>
-</div>
 
-</section>
-<!--▲▲▲▲▲ここまで「講師プロフィール」-->
+		<!--▼▼▼▼▼ここから「ウェーブアニメーション」-->
+		<svg style="display:none">
+			<defs>
+				<path id="wavePath" d="M0 30 V15 Q30 3 60 15 T120 15 V30z"></path>
+			</defs>
+		</svg>
 
+		<div class="wave-section">
+			<div class="wave wave-top">
+				<svg viewBox="0 0 120 28" preserveAspectRatio="none">
+					<g class="wave-wrap">
+						<use href="#wavePath" x="0" y="0"></use>
+						<use href="#wavePath" x="120" y="0"></use>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<!--▲▲▲▲▲ここまで「ウェーブアニメーション」-->
 
 
-</main>
 
-</div>
-<!--/#contents-->
+		<!--▼▼▼▼▼ここから「フッター」-->
+		<footer id="footer">
 
+			<div class="footer1">
 
+				<p><img src="images/logo.png" alt="DD DIGITAL SERVICES" style="width:150px;"></p>
 
-<!--▼▼▼▼▼ここから「ウェーブアニメーション」-->
-<svg style="display:none">
-<defs>
-<path id="wavePath" d="M0 30 V15 Q30 3 60 15 T120 15 V30z"></path>
-</defs>
-</svg>
+				<p>〒131-0045 東京都墨田区業平3-16-1鳥崎ビル 2F<br>
+					Doron GALLERY TOKYO<br>
+					電話：<a href="tel:07089325852">070-8932-5852</a></p>
 
-<div class="wave-section">
-<div class="wave wave-top">
-<svg viewBox="0 0 120 28" preserveAspectRatio="none">
-<g class="wave-wrap">
-<use href="#wavePath" x="0" y="0"></use>
-<use href="#wavePath" x="120" y="0"></use>
-</g>
-</svg>
-</div>
-</div>
-<!--▲▲▲▲▲ここまで「ウェーブアニメーション」-->
+				<ul class="sns">
+					<li><a href="https://x.com/D_digital_sup" target="_blank" rel="noopener noreferrer"
+							aria-label="X（Twitter）"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/@Doron%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%A6%E3%82%A7%E3%82%A2%E5%85%AC%E5%BC%8F"
+							target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"
+								aria-hidden="true"></i></a></li>
+				</ul>
 
+				<ul class="footer-legal">
+					<li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+					<li><a href="privacy.html">プライバシーポリシー</a></li>
+				</ul>
 
+			</div>
+			<!--/.footer1-->
 
-<!--▼▼▼▼▼ここから「フッター」-->
-<footer id="footer">
+			<div class="footer2">
 
-<div class="footer1">
+				<h3>アクセス</h3>
+				<div class="iframe">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.8103!3d35.7095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed3ce134389%3A0x8c8f8d5b5c2b3a4e!2z5p2x5Lqs6YO95aKo55Sw5Yy65qWt5bmzMy0xNi0x6bOl5bSO44OT44OrIDJG!5e0!3m2!1sja!2sjp!4v1700000000000"
+						frameborder="0" style="border:0" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade" title="Doron GALLERY TOKYO アクセスマップ"></iframe>
+				</div>
 
-<p><img src="images/logo.png" alt="DD DIGITAL SERVICES" style="width:150px;"></p>
+				<small>Copyright&copy; スポデジスクール All Rights Reserved.</small>
 
-<p>〒131-0045 東京都墨田区業平3-16-1鳥崎ビル 2F<br>
-Doron GALLERY TOKYO<br>
-メール：<a href="mailto:riku@center3.co.jp">riku@center3.co.jp</a><br>
-電話：<a href="tel:07089325852">070-8932-5852</a></p>
+			</div>
+			<!--/.footer2-->
 
-<ul class="sns">
-<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-</ul>
+		</footer>
+		<!--▲▲▲▲▲ここまで「フッター」-->
 
-</div>
-<!--/.footer1-->
 
-<div class="footer2">
 
-<h3>アクセス</h3>
-<div class="iframe">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4!2d139.8113!3d35.7108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5p2x5Lqs6YO95aKo55Sw5Yy65qWt5bmzMy0xNi0x!5e0!3m2!1sja!2sjp!4v1700000000000" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
-</div>
+		<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+		<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 
-<small>Copyright&copy; スポデジスクール All Rights Reserved.</small>
+	</div>
+	<!--/#container-->
 
-</div>
-<!--/.footer2-->
 
-</footer>
-<!--▲▲▲▲▲ここまで「フッター」-->
 
+	<!--ページの上部へ戻るボタン-->
+	<div class="pagetop"><a href="#" aria-label="ページトップへ戻る"><i class="fas fa-angle-double-up"
+				aria-hidden="true"></i></a></div>
 
+	<!--開閉ボタン（ハンバーガーアイコン）-->
+	<div id="menubar_hdr" role="button" tabindex="0" aria-label="メニューを開く" aria-expanded="false">
+		<span></span><span></span><span></span>
+	</div>
 
-<!--以下の行はテンプレートの著作。削除しないで下さい。-->
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	<!--jQueryの読み込み-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
+		crossorigin="anonymous"></script>
 
-</div>
-<!--/#container-->
+	<!--パララックス（inview）-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+		integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery.inview_set.js"></script>
 
-
-<!--ページの上部へ戻るボタン-->
-<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
-
-<!--開閉ボタン（ハンバーガーアイコン）-->
-<div id="menubar_hdr">
-<span></span><span></span><span></span>
-</div>
-
-<!--jQueryの読み込み-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!--パララックス（inview）-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="js/jquery.inview_set.js"></script>
-
-<!--このテンプレート専用のスクリプト-->
-<script src="js/main.js"></script>
+	<!--このテンプレート専用のスクリプト-->
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>

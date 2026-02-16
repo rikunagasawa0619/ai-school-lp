@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ページが見つかりません｜スポデジスクール</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .error-page {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .error-page h2 {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .error-page h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .error-page p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .error-page .btn-back {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .error-page .btn-back:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body class="home small-screen">
+    <div id="container">
+
+        <header>
+            <h1 id="logo"><a href="/"><img src="/images/logo.png" alt="DD DIGITAL SERVICES"></a></h1>
+        </header>
+
+        <main>
+            <section class="error-page">
+                <h2>404</h2>
+                <h3>ページが見つかりません</h3>
+                <p>お探しのページは存在しないか、移動された可能性があります。</p>
+                <a href="/" class="btn-back">トップページに戻る</a>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer1">
+                <small>Copyright&copy; スポデジスクール All Rights Reserved.</small>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
