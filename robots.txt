@@ -1,0 +1,7 @@
+# DDS - AI実戦スクール
+# https://ddsschool.vercel.app/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ddsschool.vercel.app/sitemap.xml
