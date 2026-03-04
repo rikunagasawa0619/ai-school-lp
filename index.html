@@ -396,8 +396,7 @@
 
 						<div class="info-card up">
 							<h4><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> 開催日時</h4>
-							<p>最新のスケジュール情報は随時更新いたします。<br>
-								ご入会後、講義の開催時間を確認できるようになります。<br>
+							<p><a href="#schedule" class="tuition-link">最新のスケジュール情報は随時更新いたします。</a><br>
 								平日夜または土日に開講予定です。<br>
 								また、一部授業は平日昼等にイベント形式で開催することもあります。</p>
 						</div>
@@ -421,6 +420,29 @@
 
 
 
+				<!--▼▼▼▼▼ここから「スケジュール」-->
+				<section id="schedule" class="bg1">
+
+					<h2 class="c"><span class="fade-in-text">スケジュール</span><span class="small">Schedule</span>
+					</h2>
+
+					<div class="schedule-calendar up">
+						<p class="schedule-note"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+							最新の講義スケジュールをご確認いただけます。</p>
+						<div class="calendar-embed">
+							<!-- TODO: Googleカレンダー埋め込みリンクをここに設置 -->
+							<iframe
+								src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia%2FTokyo"
+								style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"
+								title="DDS講義スケジュール"></iframe>
+						</div>
+					</div>
+
+				</section>
+				<!--▲▲▲▲▲ここまで「スケジュール」-->
+
+
+
 				<!--▼▼▼▼▼ここから「受講の流れ」-->
 				<section id="flow">
 
@@ -433,10 +455,10 @@
 						</div>
 						<div class="text">
 							<h3>まずはお気軽にお問い合わせください</h3>
-							<p>下記のお問い合わせフォームにて、お問い合わせください。スクールの詳細やご不明点についてお答えいたします。</p>
+							<p>下記のお問い合わせフォームにて、お問い合わせください。</p>
 							<ul class="step">
 								<li>下記お問い合わせフォームよりご連絡ください。</li>
-								<li>スクールの内容、日程等についてご説明いたします。</li>
+								<li>スクールの内容、日程、ご入会方法についてご説明いたします。</li>
 							</ul>
 						</div>
 					</div>
@@ -444,15 +466,14 @@
 					<div class="flow-box up">
 						<span class="step-num">Step02</span>
 						<div class="title">
-							<h3>受講申し込み<span>Application</span></h3>
+							<h3>受講の予約<span>Reservation</span></h3>
 						</div>
 						<div class="text">
-							<h3>受講のお申し込み</h3>
-							<p>ご希望の日程を選択し、受講申し込みを行っていただきます。</p>
+							<h3>受講のご予約</h3>
+							<p>入会後、専用会員サイトから受講のご予約をしていただきます。</p>
 							<ul class="step">
-								<li>ご希望の受講日程をお選びください。</li>
-								<li>必要事項をご記入の上、お申し込みください。</li>
-								<li>お申し込み確認後、詳細をご連絡いたします。</li>
+								<li>専用会員サイトから受講のご予約をお取りください。</li>
+								<li>ご予約確認後、会場にお越しください。</li>
 							</ul>
 						</div>
 					</div>
@@ -464,11 +485,11 @@
 						</div>
 						<div class="text">
 							<h3>いよいよ受講スタート！</h3>
-							<p>Doron GALLERY TOKYOまたは近隣会場にて、オフライン講義を受講いただきます。仲間と一緒に、最新のAIスキルを楽しく学びましょう！</p>
+							<p>Doron GALLERY TOKYOまたは近隣会場にて、オフライン講義を受講いただきます。</p>
 							<ul class="step">
-								<li>受講当日は、ノートPCをお持ちください。</li>
-								<li>講師が制作したAIツールを使って実践的に学びます。</li>
-								<li>講義後も質問・相談をお受けいたします。</li>
+								<li>受講当日は、スマートフォンもしくはノートPC（講義によっては必須）をお持ちください。</li>
+								<li>講師と一緒に実践形式で、AIやデジタルスキルを学びます。</li>
+								<li>仲間と一緒に、楽しく学習していきましょう！</li>
 							</ul>
 						</div>
 					</div>
@@ -529,7 +550,8 @@
 							2F）または近隣会場にて、少人数制（各回6名（予定））で行います。実際に手を動かしながら学ぶ実践型の講義です。</dd>
 
 						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">受講に必要なものは何ですか？</dt>
-						<dd>ノートPCをご持参ください。講義で使用するAIツール等は、講師が用意したものをご利用いただけます。事前のソフトウェアインストール等が必要な場合は、事前にご案内いたします。</dd>
+						<dd>ノートPCもしくはスマートフォンをご持参ください。ノートPCが必須の講義もあります。生成AIに関しては、Geminiのアカウントをこちらから付与します。事前のソフトウェアインストール等が必要な場合は、事前にご案内いたします。
+						</dd>
 
 						<dt class="openclose2" role="button" tabindex="0" aria-expanded="false">スポーツに関わっていなくても受講できますか？
 						</dt>
@@ -581,6 +603,11 @@
 							</div>
 
 						</div>
+					</div>
+
+					<div class="instructor-more up">
+						<p>And More...</p>
+						<span>今後、新たな講師が追加予定です。お楽しみに！</span>
 					</div>
 
 				</section>

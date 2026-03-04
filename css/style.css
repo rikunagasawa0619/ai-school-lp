@@ -1167,6 +1167,67 @@ ul.step li:last-child::after {
 /*追加指定ここまで*/
 
 
+/*スケジュール（Googleカレンダー）セクション
+---------------------------------------------------------------------------*/
+.schedule-calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.schedule-note {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-inverse-color);
+}
+
+.schedule-note i {
+    margin-right: 0.5rem;
+    color: var(--accent-color);
+}
+
+.calendar-embed {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-embed iframe {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+}
+
+@media screen and (min-width:700px) {
+    .calendar-embed iframe {
+        min-height: 600px;
+    }
+}
+
+
+/*講師 And More
+---------------------------------------------------------------------------*/
+.instructor-more {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.instructor-more p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+}
+
+.instructor-more span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
 /*開催情報セクション（カスタム）
 ---------------------------------------------------------------------------*/
 .info-grid {
