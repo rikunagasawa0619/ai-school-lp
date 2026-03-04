@@ -200,7 +200,20 @@ header a {
 /*ロゴ*/
 #logo img {
     display: block;
-    width: 220px;
+    width: 140px;
+}
+
+/*画面幅500px以上*/
+@media screen and (min-width:500px) {
+    #logo img {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #logo img {
+        width: 220px;
+    }
 }
 
 /*画面幅900px以上の追加指定*/
@@ -262,6 +275,16 @@ header a {
 
     #header-box .btn li {
         margin-bottom: 0.5rem;
+    }
+
+    #header-box .btn a {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    #header-box .btn i {
+        margin-right: 0.5rem;
+        transform: scale(1.1);
     }
 
 }
@@ -352,7 +375,7 @@ header a {
 }
 
 
-/*ヘッダーにある１行のお知らせ
+/*お知らせバー（ヒーロー直下）
 ---------------------------------------------------------------------------*/
 .new-top * {
     margin: 0;
@@ -360,17 +383,18 @@ header a {
 }
 
 .new-top {
-    position: absolute;
-    top: 80vh;
-    z-index: 1;
-    width: 80vw;
-    margin-left: 10vw;
+    position: relative;
+    z-index: 5;
+    width: 90%;
+    max-width: 900px;
+    margin: -3rem auto 2rem;
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .new-top a:hover {
@@ -378,13 +402,32 @@ header a {
 }
 
 .new-top h2 {
-    font-size: 1rem;
-    font-weight: normal;
+    font-size: 0.85rem;
+    font-weight: bold;
     background: var(--primary-color);
     color: #fff;
     border-radius: 3px;
-    margin-right: 1rem;
-    padding: 0 1rem;
+    padding: 0.2rem 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.new-top-list {
+    flex: 1;
+    min-width: 0;
+}
+
+.new-top-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.new-top-item:last-child {
+    border-bottom: none;
 }
 
 .new-top .text {
@@ -393,10 +436,32 @@ header a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 0.9rem;
 }
 
 .new-top .new-list {
-    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+.new-top .new-list a {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .new-top {
+        flex-direction: column;
+        margin: -2rem auto 1.5rem;
+        width: 92%;
+    }
+
+    .new-top-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
 }
 
 
@@ -468,12 +533,14 @@ main h2.c {
 .list-half .list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+    gap: 1.5rem;
 }
 
 .list-half .list h4 {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
 }
 
 .list-half .list h4 span {
@@ -484,10 +551,19 @@ main h2.c {
     letter-spacing: 0.1em;
 }
 
+.list-half .list p {
+    line-height: 1.9;
+    font-size: 0.95rem;
+}
+
 .list-half .image-l img,
 .list-half .image-r img {
-    border-radius: 50px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:900px) {
@@ -496,24 +572,30 @@ main h2.c {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 3rem;
     }
 
     .list-half .image-l,
     .list-half .image-r {
-        width: 50%;
+        width: 42%;
+        flex-shrink: 0;
     }
 
     .list-half .image-r {
-        margin-left: 2rem;
+        order: 1;
     }
 
     .list-half .image-l {
         order: -1;
-        margin-right: 2rem;
     }
 
     .list-half .text {
         flex: 1;
+    }
+
+    .list-half .image-l img,
+    .list-half .image-r img {
+        max-width: 100%;
     }
 
 }
@@ -614,6 +696,15 @@ main h2.c {
     width: 100%;
     font-size: 3rem;
     color: var(--primary-color);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 2px 2px 4px rgba(255, 255, 255, 0.9);
+    font-weight: 900;
+}
+
+.flow-box .text h3 {
+    background: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
 }
 
 @media screen and (min-width:900px) {
@@ -628,6 +719,7 @@ main h2.c {
         top: -100px;
         font-size: 5rem;
         opacity: 0.15;
+        text-shadow: none;
     }
 
     .flow-box .title {
@@ -644,6 +736,12 @@ main h2.c {
 
     .flow-box .text {
         flex: 1;
+    }
+
+    .flow-box .text h3 {
+        background: none;
+        display: block;
+        padding: 0;
     }
 
 }
@@ -1104,6 +1202,17 @@ ul.step li:last-child::after {
     color: #ffd700;
 }
 
+.tuition-link {
+    color: #ffd700;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+
+.tuition-link:hover {
+    opacity: 0.7;
+}
+
 @media screen and (min-width:700px) {
 
     .info-grid {
@@ -1459,4 +1568,409 @@ ul.step li:last-child::after {
 .footer-legal li a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+
+/*DDSの魅力 - 紹介文
+---------------------------------------------------------------------------*/
+.kodawari-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 2;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*料金プランセクション
+---------------------------------------------------------------------------*/
+.plans-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:800px) {
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .plans-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.plan-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 2.5rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.2rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.plan-badge-popular {
+    background: linear-gradient(135deg, #e63946, #ff6b6b);
+    color: #fff;
+}
+
+.plan-badge-premium {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #1a2b5e;
+}
+
+.plan-name {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.plan-price {
+    text-align: center;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-amount {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+
+.price-period {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 0.2rem;
+}
+
+.plan-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.plan-features {
+    list-style: none;
+    margin: 0 0 2rem !important;
+    padding: 0;
+    flex: 1;
+}
+
+.plan-features li {
+    position: relative;
+    padding: 0.4rem 0 0.4rem 1.8rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.plan-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4ecdc4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.plan-cta {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background: var(--accent-color);
+    color: #fff;
+    margin-top: auto;
+}
+
+.plan-cta:hover {
+    background: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+}
+
+/* Biz カード強調 */
+.plan-biz {
+    border-color: var(--accent-color);
+    background: rgba(230, 57, 70, 0.08);
+}
+
+/* Pro カード強調 */
+.plan-pro {
+    border-color: #ffd700;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.06), rgba(255, 170, 0, 0.04));
+}
+
+.plan-pro .plan-cta {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #1a2b5e;
+}
+
+.plan-pro .plan-cta:hover {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Pro年間 カード強調 */
+.plan-pro-annual {
+    border-color: #ffd700;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 170, 0, 0.06));
+}
+
+.plan-pro-annual .plan-cta {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #1a2b5e;
+}
+
+.plan-pro-annual .plan-cta:hover {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* エンタープライズ */
+.plan-enterprise {
+    margin-top: 2rem;
+}
+
+.plan-enterprise-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.plan-enterprise-header h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.8rem;
+    color: #fff;
+}
+
+.plan-enterprise-header h3 i {
+    margin-right: 0.5rem;
+}
+
+.plan-enterprise-header p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+.enterprise-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width:700px) {
+    .enterprise-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.enterprise-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.enterprise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.enterprise-card h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0 0 1rem;
+}
+
+.enterprise-card h4 i {
+    margin-right: 0.4rem;
+    color: #4ecdc4;
+}
+
+.enterprise-price {
+    margin: 0 0 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.enterprise-price .price-amount {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.enterprise-price .price-note {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.enterprise-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0.5rem 0 1.5rem;
+    flex: 1;
+}
+
+.plan-cta-enterprise {
+    white-space: nowrap;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    margin-top: auto;
+}
+
+.plan-cta-enterprise:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    box-shadow: none;
+}
+
+/* 統一CTAボタン */
+.plans-cta-unified {
+    text-align: center;
+    margin: 2.5rem 0 1rem;
+}
+
+.plans-cta-unified .plan-cta {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plan-cta-apply {
+    background: linear-gradient(135deg, var(--accent-color), #ff6b6b) !important;
+    color: #fff !important;
+}
+
+.plan-cta-apply:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(230, 57, 70, 0.5) !important;
+}
+
+.plan-cta-apply i {
+    margin-right: 0.5rem;
+}
+
+.plan-cta-enterprise-unified {
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
+}
+
+.plan-cta-enterprise-unified:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #fff !important;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15) !important;
+}
+
+.plan-cta-enterprise-unified i {
+    margin-right: 0.5rem;
+}
+
+/* コンパクトお問い合わせセクション */
+.contact-compact {
+    background: var(--primary-color);
+    padding: 2rem;
+}
+
+.contact-compact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contact-compact-inner p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contact-compact-inner p i {
+    margin-right: 0.4rem;
+}
+
+.contact-compact-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 2.5rem;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.contact-compact-btn:hover {
+    background: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+}
+
+.contact-compact-btn i {
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width:700px) {
+    .contact-compact-inner {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+/*講義内容セクション（service）背景調整
+---------------------------------------------------------------------------*/
+#service {
+    background: var(--secondary-color);
+    color: var(--secondary-inverse-color);
 }

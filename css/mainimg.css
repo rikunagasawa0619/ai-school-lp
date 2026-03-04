@@ -46,24 +46,25 @@
     text-align: center;
     color: #fff;
     padding: 2rem;
+    padding-top: 100px;
     max-width: 800px;
 }
 
 /*サブタイトル「スポーツ × デジタル」*/
 .hero-subtitle {
     display: inline-block;
-    font-size: 1.2rem;
-    letter-spacing: 0.3em;
-    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    padding: 0.4rem 1.2rem;
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 30px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     animation: opa1 1s 0.5s both;
 }
 
 /*メインタイトル*/
 .hero-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -72,7 +73,7 @@
 
 .hero-title .highlight {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2.2rem;
     background: linear-gradient(135deg, #e63946, #ff6b6b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -87,7 +88,7 @@
     color: #1a2b5e;
     padding: 0.1em 0.3em;
     margin: 0.1em;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 900;
     line-height: 1.2;
 }
@@ -107,16 +108,52 @@
 
 /*「初心者大歓迎」テキスト*/
 .hero-welcome {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 900;
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
+    margin-bottom: 2rem;
     animation: opa1 1s 1.2s both;
 }
 
+/*画面幅500px以上の追加指定*/
+@media screen and (min-width:500px) {
+
+    .hero-content {
+        padding-top: 80px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-title .highlight {
+        font-size: 3rem;
+    }
+
+    .hero-title .box-text {
+        font-size: 3rem;
+    }
+
+    .hero-welcome {
+        font-size: 2rem;
+    }
+
+}
+
+/*追加指定ここまで*/
+
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width:900px) {
+
+    .hero-content {
+        padding-top: 2rem;
+    }
 
     .hero-subtitle {
         font-size: 1.5rem;
