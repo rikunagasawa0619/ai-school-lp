@@ -1191,7 +1191,7 @@ ul.step li:last-child::after {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    max-height: 580px;
+    max-height: 530px;
 }
 
 .calendar-embed iframe {
